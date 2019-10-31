@@ -1,30 +1,36 @@
 <template>
     <div>
-        <el-carousel  direction="vertical" :autoplay="false">
-            <el-carousel-item>
-                <img src="../assets/k20c.jpg" alt="">
-            </el-carousel-item>
-        </el-carousel>
+        <div class="d">
+            <div class="d1">
+                <img src="../assets/chun.png">
+                <div style="text-align:center">
+                    <p>GEMBRYO SCHOOL</p>
+                    <p>春田花花幼儿园</p>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <style scoped>
-el-carousel{
-    width:100%;
-    height:100%;
+.d{
+    position: relative;
 }
-/* .el-carousel__item h3 {
-    color: #475669;
-    font-size: 14px;
-    opacity: 0.75;
-    line-height: 200px;
-    margin: 0;
-  }
-  
-  .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
-  }
-  
-  .el-carousel__item:nth-child(2n+1) {
-    background-color: #d3dce6;
-  } */
+.d1{
+    font-size:10px;
+    position:absolute;
+    margin-top:2%;
+    margin-left:5%;
+    display:flex;
+}
+.d1 img{
+    width:20%;
+    height:20%; 
+}
+.d1 div p{
+    font-size:15px;
+    margin:0px 5px;
+    font-family:'Comic Sans MS', cursive, sans-serif;
+    font-weight:600;
+}
 </style>
+
