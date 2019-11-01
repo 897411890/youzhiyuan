@@ -11,7 +11,7 @@
                     </div>
                 </div>
             </el-carousel-item> 
-            <!-- <el-carousel-item>
+            <el-carousel-item>
                 <div class="d2">
                     <img src="../assets/1.png" alt="">
                 </div>
@@ -31,7 +31,7 @@
                     <img src="../assets/4.png" alt="">
                 </div>
 
-            </el-carousel-item> -->
+            </el-carousel-item>
         </el-carousel>
     </div>
 </template>
