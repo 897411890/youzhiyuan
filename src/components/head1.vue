@@ -26,7 +26,6 @@
 .d{
     display:flex;
     justify-content: space-between;
-    background:#0d3f40
 }
 .d1{
     font-size:10px;
@@ -47,8 +46,7 @@
     font-weight:600;
 }
 .d2{
-    margin-right:2%;padding:3% 0%;;
-    width:60%;
+    margin-right:5%;
     
 }
 .d2 a{
@@ -57,7 +55,6 @@
     text-decoration:none;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     font-weight:600;
-    margin-right:1%;
 }
 .d2  a:hover{
     font-size:18px;

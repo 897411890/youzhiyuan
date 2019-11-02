@@ -3,7 +3,7 @@
         <el-carousel height="640px"  direction="vertical" :autoplay="true" :interval="2000">
              <el-carousel-item >
                 <div class="d1">
-                    <heades style="z-index:3"></heades>
+                    <heades class="t1"></heades>
                     <div class="d1_1">
                         <p class="p1">春田花花幼稚园</p>
                         <p class="p2">GEMBRYO SCHOOL</p>
@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import heades from "./head.vue"//引入子组件
+import heades from "./head1.vue"//引入子组件
   export default {
     data () {
       return {
