@@ -25,7 +25,7 @@
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 .d2{
-    background:url("../assets/huodong.jpg");
+    background:url("../assets/guoji.jpg");
     background-size:100%;
     height:640px;
     position: relative;

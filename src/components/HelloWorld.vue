@@ -1,6 +1,6 @@
 <template>
-    <div style="width:100%;height:640px;">
-        <el-carousel height="640px"  direction="vertical" :autoplay="true" :interval="2000">
+    <div id="app">
+        <el-carousel height="657px" direction="vertical" :autoplay="true" :interval="2000">
              <el-carousel-item >
                 <div class="d1">
                     <heades class="t1"></heades>
@@ -11,7 +11,7 @@
                     </div>
                 </div>
             </el-carousel-item> 
-            <el-carousel-item>
+            <!-- <el-carousel-item>
                 <div class="d2">
                     <img src="../assets/1.png" alt="">
                 </div>
@@ -31,7 +31,7 @@
                     <img src="../assets/4.png" alt="">
                 </div>
 
-            </el-carousel-item>
+            </el-carousel-item> -->
         </el-carousel>
     </div>
 </template>
@@ -53,15 +53,21 @@ import heades from "./head1.vue"//引入子组件
 <style scoped>
 *{margin:0;padding:0}
 img{position:absolute;}
+#app{
+     width:100%;
+     height:100%;
+     display:flex;
+     flex-direction:column;/*容器，弹性盒元素布局以垂直显示，一列一列*/
+}
 .d1,.d2,.d3,.d4,.d5{
     width:100%;
-    height:640px;
+    height:100%;
     position:relative;
 }
 
 .d1{
-    background:url("../assets/0.jpg");
-    background-size:100%;
+    background:url("../assets/0.jpg") no-repeat;
+    background-size:100% 100%;
     color:#fff;
     font-size:60px;
 }
