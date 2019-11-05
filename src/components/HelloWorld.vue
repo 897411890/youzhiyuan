@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
-        <el-carousel height="657px" direction="vertical" :autoplay="true" :interval="2000">
-             <el-carousel-item >
+    <div class="app">
+        <el-carousel :height="clientHeight+'px'"  direction="vertical" :autoplay="true" :interval="2000">
+            <el-carousel-item>
                 <div class="d1">
                     <heades class="t1"></heades>
                     <div class="d1_1">
@@ -11,27 +11,27 @@
                     </div>
                 </div>
             </el-carousel-item> 
-            <!-- <el-carousel-item>
-                <div class="d2">
+            <el-carousel-item>
+                <div class="d2" ref="homePage">
                     <img src="../assets/1.png" alt="">
                 </div>
             </el-carousel-item>
              <el-carousel-item>
-                 <div class="d3">
+                 <div class="d3" ref="homePage">
                      <img src="../assets/2.png" alt="">
                  </div>
             </el-carousel-item>
             <el-carousel-item>
-                <div class="d4">
+                <div class="d4" ref="homePage">
                     <img src="../assets/3.png" alt="">
                 </div>
             </el-carousel-item>
             <el-carousel-item>
-                <div class="d5">
+                <div class="d5" ref="homePage">
                     <img src="../assets/4.png" alt="">
                 </div>
 
-            </el-carousel-item> -->
+            </el-carousel-item> 
         </el-carousel>
     </div>
 </template>
@@ -41,8 +41,32 @@ import heades from "./head1.vue"//引入子组件
   export default {
     data () {
       return {
-        
+        clientHeight:'' //用于保存屏幕高度
       }
+    },
+    mounted() { //钩子函数，后面的函数想要执行，就要先执行钩子函数
+        //获取浏览器可视区域高度
+            //声明h 用于保存body的高度
+        var h=document.documentElement.clientHeight;
+        this.clientHeight=h;
+        // console.log(this.clientHeight)
+        window.onresize=function temp(){
+            this.clientHeight=`${document.documentElement.clientHeig}`;
+        }
+    },
+    watch:{ //监视函数
+    //如果‘clientHeight’发生改变，这个函数就会运行
+        clientHeight:function(){
+            this.changeFixed(this.clientHeight)
+        }
+    },
+    methods:{ //方法函数
+        changeFixed(clientHeight){
+            //动态修改样式
+            // console.log(clientHeight)
+            // this.$refs.homePage.style.height=clientHeight+'px';
+            // console.log(this.$refs.homePage.style.height)
+        }
     },
     components:{ //注册子组件
         heades
@@ -53,11 +77,8 @@ import heades from "./head1.vue"//引入子组件
 <style scoped>
 *{margin:0;padding:0}
 img{position:absolute;}
-#app{
-     width:100%;
-     height:100%;
-     display:flex;
-     flex-direction:column;/*容器，弹性盒元素布局以垂直显示，一列一列*/
+.app{
+    width:100%;
 }
 .d1,.d2,.d3,.d4,.d5{
     width:100%;
@@ -68,6 +89,7 @@ img{position:absolute;}
 .d1{
     background:url("../assets/0.jpg") no-repeat;
     background-size:100% 100%;
+    height:100%;
     color:#fff;
     font-size:60px;
 }
@@ -100,7 +122,7 @@ img{position:absolute;}
 }
 .d3{
     background:url("../assets/2.jpg");
-    background-size:100%;
+    background-size:100% 100%;
 }
 .d3 img{
    
@@ -109,7 +131,7 @@ img{position:absolute;}
 }
 .d4{
     background:url("../assets/3.jpg");
-    background-size:100%;
+    background-size:100% 100%;
 }
 .d4 img{
     top:20%;
@@ -117,7 +139,7 @@ img{position:absolute;}
 }
 .d5{
     background:url("../assets/4.jpg");
-    background-size:100%;
+    background-size:100% 100%;
 }
 .d5 img{
     top:30%;

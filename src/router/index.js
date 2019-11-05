@@ -7,7 +7,8 @@ import pinzhi from '@/components/pinzhi'
 import jiaoxue from '@/components/jiaoxue'
 import guoji from '@/components/guoji'
 import huodong from '@/components/huodong'
-
+import ruxue from '@/components/ruxue'
+import jiaru from '@/components/jiaru'
 
 Vue.use(Router)
 
@@ -20,5 +21,7 @@ export default new Router({
      {path: '/jiaoxue',component: jiaoxue},
      {path: '/guoji',component: guoji},
      {path: '/huodong',component: huodong},
+     {path: '/ruxue',component: ruxue},
+     {path: '/jiaru',component: jiaru},
   ]
 })

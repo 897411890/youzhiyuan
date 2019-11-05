@@ -15,8 +15,8 @@
                     <p><router-link to="huodong">新闻与活动</router-link></p>
                 </div>
                 <div>
-                    <p><router-link to="women">入学申请</router-link></p>
-                    <p><router-link to="women">加入春天</router-link></p>
+                    <p><router-link to="ruxue">入学申请</router-link></p>
+                    <p><router-link to="jiaru">加入春天</router-link></p>
                 </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                     <img src="../assets/chun.png">
                     <div style="text-align:center">
                         <p>GEMBRYO SCHOOL</p>
-                        <p>春田花花幼儿园</p>
+                        <p>春田花花幼稚园</p>
                     </div>
                 </div>
                 <p class="p2">关注儿童生活 使儿童成为自生活的主人</p>

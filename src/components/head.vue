@@ -5,7 +5,7 @@
                 <img src="../assets/chun.png">
                 <div style="text-align:center">
                     <p>GEMBRYO SCHOOL</p>
-                    <p>春田花花幼儿园</p>
+                    <p>春田花花幼稚园</p>
                 </div>
             </div>
             <div class="d2">
@@ -16,8 +16,8 @@
                 <router-link to="jiaoxue"><a>教学体系</a></router-link>
                 <router-link to="guoji"><a>国际视野</a></router-link>
                 <router-link to="huodong"><a>新闻与活动</a></router-link>
-                <router-link to="women"><a>入学申请</a></router-link>
-                <router-link to="women"><a>加入春天</a></router-link>
+                <router-link to="ruxue"><a>入学申请</a></router-link>
+                <router-link to="jiaru"><a>加入春天</a></router-link>
             </div>
         </div>
     </div>
